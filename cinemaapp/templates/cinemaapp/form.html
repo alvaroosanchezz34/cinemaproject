@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Form</title>
+</head>
+<body>
+    <h1>Register a New Movie</h1>
+
+    {% if success %}
+        <p style="color:green;">Movie registered successfully!</p>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save Movie</button>
+    </form>
+</body>
+</html>
