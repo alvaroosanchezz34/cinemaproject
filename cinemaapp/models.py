@@ -18,7 +18,7 @@ class Movie(models.Model):
     release_date = models.DateField()
     announcement_date = models.DateField()
     has_subtitles = models.BooleanField()
-    substitles_language = models.CharField(max_length=50, blank=True)
+    subtitles_language = models.CharField(max_length=50, blank=True)
     imdb = models.URLField(blank=True)
     rating = models.DecimalField(
         max_digits=3,
